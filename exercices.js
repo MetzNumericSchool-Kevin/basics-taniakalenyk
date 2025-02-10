@@ -69,8 +69,26 @@ switch (choice) {
 
 // 4. Calcul du prix total d'une commande de potion
 
-let quantity = parseInt(prompt("Combien de potions veux-tu acheter ?"));
-let totalPrice = quantity * potionPriceInt;
+let potionQuantity = parseInt(prompt("Combien de potions veux-tu acheter ?"));
+let totalPrice = potionQuantity * potionPriceInt;
 console.log(
-  `Prix de ${quantity} potions de soins : ${totalPrice} 🪙, mon cher Aventurier. 💸`
+  `Prix de ${potionQuantity} potions de soins : ${totalPrice} 🪙, mon cher Aventurier. 💸`
 );
+
+// 5. Bourse de l'Aventurier 💰
+
+let adventurerMoney = 100;
+
+if (totalPrice > adventurerMoney) {
+  console.log("Vous n'avez pas assez d'argent pour acheter les potions.");
+} else {
+  if (potionNumberInt > potionQuantity) {
+    console.log("Il n'y a pas assez de potions en stock.");
+  } else {
+    potionNumberInt -= potionQuantity;
+    adventurerMoney -= totalPrice;
+    console.log(
+      `Merci pour votre achat ! Il vous reste ${adventurerMoney} 🪙 et ${potionNumberInt} 🧪`
+    );
+  }
+}
