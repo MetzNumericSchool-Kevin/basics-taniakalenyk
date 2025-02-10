@@ -92,3 +92,10 @@ if (totalPrice > adventurerMoney) {
     );
   }
 }
+
+// 6. Liste des potions
+
+let potions = ["potion de vie", "potion de magie", "potion d'empoisonnement"];
+for (let potion of potions) {
+  console.log(`Nous avons de la ${potion} !`);
+}
