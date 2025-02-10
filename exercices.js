@@ -129,3 +129,8 @@ let potionInfo = {
   quantity: 10,
 };
 console.log(potionInfo);
+
+// 11. Affichons les informations de la potion
+
+console.log(". " + potionInfo.name);
+console.log("[ " + potionInfo.price + " ]");
