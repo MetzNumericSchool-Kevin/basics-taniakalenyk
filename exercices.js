@@ -24,10 +24,12 @@ console.log("La boutique est ouverte : " + open);
 // 2. Affichage conditionnel
 
 if (open) {
-  console.log(`Bienvenue dans la boutique ${shopName} Aventurier !`);
+  console.log(
+    `Bienvenue dans la boutique ${shopName.toUpperCase()}, Aventurier !`
+  );
 } else {
   console.log(
-    `La boutique ${shopName} est fermée, revenez plus tard Aventurier ! 😴`
+    `La boutique ${shopName.toUpperCase()} est fermée, revenez plus tard Aventurier ! 😴`
   );
 }
 
@@ -35,7 +37,7 @@ if (open) {
 
 let choice = parseInt(
   prompt(
-    `Bienvenue dans mon humble boutique Aventurier.
+    `Bienvenue dans mon humble boutique, Aventurier.
     Que veux-tu savoir ? 🤔
     
     Choisissez une option :
@@ -54,7 +56,7 @@ switch (choice) {
     console.log(`Le nom du Sorcier est ${nameSorcerer}`);
     break;
   case 3:
-    console.log(`Le prix d'une potion de soin est ${potionPrice}`);
+    console.log(`Le prix d'une potion de soin est ${potionPrice} 🪙`);
     break;
   case 4:
     console.log(`La quantité d'une potion de soin est ${potionNumber}`);
@@ -64,3 +66,11 @@ switch (choice) {
       "Mh... Désolé aventurier, je ne comprends pas ce que tu souhaites. Refais ton choix ! 😕"
     );
 }
+
+// 4. Calcul du prix total d'une commande de potion
+
+let quantity = parseInt(prompt("Combien de potions veux-tu acheter ?"));
+let totalPrice = quantity * potionPriceInt;
+console.log(
+  `Prix de ${quantity} potions de soins : ${totalPrice} 🪙, mon cher Aventurier. 💸`
+);
