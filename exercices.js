@@ -107,3 +107,11 @@ console.log(potions[potions.length - 1]);
 for (let potion of potions) {
   console.log(`Nous avons de la ${potion} !`);
 }
+
+// 8. Ajout d'une nouvelle potion
+
+let newPotion = prompt("Quelle potion veux-tu ajouter ?");
+potions.push(newPotion);
+for (let potion of potions) {
+  console.log(`Nous avons de la ${potion} !`);
+}
