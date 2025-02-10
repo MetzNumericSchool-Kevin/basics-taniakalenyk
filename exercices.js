@@ -121,4 +121,11 @@ for (let potion of potions) {
 let lastPotion = potions.pop();
 console.log(potions);
 
+// 10. Rangeons les informations de la potion de soin dans un objet 🧹
 
+let potionInfo = {
+  name: "potion de soin",
+  price: 10,
+  quantity: 10,
+};
+console.log(potionInfo);
