@@ -115,3 +115,10 @@ potions.push(newPotion);
 for (let potion of potions) {
   console.log(`Nous avons de la ${potion} !`);
 }
+
+// 9. Finaly, nope.
+
+let lastPotion = potions.pop();
+console.log(potions);
+
+
