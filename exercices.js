@@ -99,3 +99,11 @@ let potions = ["potion de vie", "potion de magie", "potion d'empoisonnement"];
 for (let potion of potions) {
   console.log(`Nous avons de la ${potion} !`);
 }
+
+// 7. Affichage du nom de la première et de la dernière potion
+
+console.log(potions[0]);
+console.log(potions[potions.length - 1]);
+for (let potion of potions) {
+  console.log(`Nous avons de la ${potion} !`);
+}
