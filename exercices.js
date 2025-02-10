@@ -20,3 +20,12 @@ console.log("Potion Price: " + potionPrice);
 // Déclare une variable pour indiquer si la boutique est ouverte ou non.
 let open = true;
 console.log("Shop is open: " + open);
+
+// Affichage conditionnel
+if (open) {
+  console.log(`Bienvenue dans la boutique ${shopName} Aventurier !`);
+} else {
+  console.log(
+    `La boutique ${shopName} est fermée, revenez plus tard Aventurier ! 😴`
+  );
+}
